@@ -32,7 +32,7 @@ static const Rule rules[] = {
 	{ "Gimp",				NULL,		NULL,	0,			0,			1,  		-1 },
 	{ "Firefox",			NULL,		NULL,	1 << 8,		0,			0,			-1 },
 	{ "Sxiv",				NULL,		NULL, 	0,			1,			1,			-1 },
-	{ "gnome-calculator", 	NULL,		NULL,	0,			1,			1,			-1 }
+	{ "Gnome-calculator", 	NULL,		NULL,	0,			1,			1,			-1 }
 };
 
 /* layout(s) */
@@ -82,6 +82,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
@@ -190,5 +191,6 @@ static Signal signals[] = {
 	{ "quit",           quit },
 	{ "setlayout",      setlayout },
 	{ "setlayoutex",    setlayoutex },
-	{ "xrdb",			xrdb }
+	{ "xrdb",			xrdb },
+	{ "togglefullscr",	togglefullscr }
 };
