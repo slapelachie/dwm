@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 8;        /* gaps between windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -35,7 +35,8 @@ static const Rule rules[] = {
 	{ "Sxiv",				NULL,		NULL, 	0,			1,			1,			0,			0,			-1 },
 	{ "Gnome-calculator", 	NULL,		NULL,	0,			1,			1,			0,			0,			-1 },
 	{ "St",					NULL,		NULL,	0,			0,			0,			1,			0,			-1 },
-	{ "zoom",				NULL,		"Polls",0,			1,			1,			0,			0,			-1 }
+	{ "zoom",				NULL,		"Polls",0,			1,			1,			0,			0,			-1 },
+	{ "burp-StartBurp",		NULL,		NULL,	0,			0,			0,			0,			0,			-1 }
 };
 
 /* layout(s) */
